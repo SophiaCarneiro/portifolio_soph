@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ececece7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 45px 30px;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: rgb(255, 196, 0);
+  margin-right: 500px;
+}
+
+.navbar-left nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 18px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-left nav a:hover {
+  color: #ffc800;
+}
+
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+.footer {
+  background: linear-gradient(#151515, #757373);
+  padding: 30px 140px 20px;
+  font-size: 14px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 0 1 200px;;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color:  #ffc800;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #222;
+  margin-bottom: 10px;
+}
+
+.lang-select {
+  margin-top: 10px;
+  color: #ccc;
+  cursor: pointer;
+}
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #a8a8a8;
+}
+
+.footer-bottom-content p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.footer-bottom-content .lang-select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #c0c0c0;
+}
+
+.footer-bottom-content .lang-select i {
+  font-size: 10px;
+}
+
+.foto{
+    width: 45%;
+    margin-top: 30px;
+    margin-bottom: 27px;
+
+}
+.sobre-mim {
+    float: left;
+    width: 55%;
+}
+.titulo{
+    font-size: 2.5rem;
+    font-family: Helvetica, sans-serif;
+    padding:0;
+}
+.psobremim{
+    text-align: justify;
+}
+ .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      text-align: center;
+      transition: transform 0.2s;
+
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #000;
+      font-size: 1.1em;
+    }
+
+    .card h3:hover{
+      color:#eab802ee;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .Habilidades{
+        background-color: #151515;
+    }
+    .titulo2{
+        font-size: 2.0rem;
+    font-family: Helvetica, sans-serif;
+    padding:0;
+    color:rgb(255, 196, 0);
+    text-align: center;
+    }
+    
+  .carossel{
+  justify-content: center;
+  align-items: center;
+  height: 680px;
+
+}
+
+.slide {
+  width: 1024px;
+  height: 576px;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.4s;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slides {
+  width: 5120px;
+  display: flex;
+}
+
+.image img {
+  width: 1024px;
+  height: 576px;
+}
+
+#atual {
+  transition: all 2s;
+}
+
+.btn {
+  position: absolute;
+  color: #989797c4;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+}
+
+#voltar {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+#next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.balls {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.balls div {
+  transition: all 0.5s;
+  border: 3px solid #989797c4;
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.balls div:hover {
+  background: #989797c4;
+}
+
+.imgAtual {
+  background: #989797c4;
+  transition: all 0.5s;
+}
+.titulo3{
+    font-size: 2.5rem;
+    font-family: Helvetica, sans-serif;
+    padding:0;
+    text-align: center;
+}
+.realizacoes{
+  margin-left: 17%;
+  margin-right: 17%;
+}
+.caixas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    margin-left: 7%;
+    margin-right: 7%;}
+
+.caixa {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 18%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.caixa:hover {
+  transform: translateY(-5px);
+}
+
+.caixa h3 {
+  background-color: rgb(250, 193, 7);
+  color: rgb(30, 29, 29);
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.caixa-conteudo {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.caixa-conteudo p {
+  margin: 16px 0;
+  color: #333;
+}
+
+.caixa.ativa .caixa-conteudo {
+  max-height: 350px;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+.textocaixa{
+  text-align: left;
+}
+
+.paragrafo {
+  max-width: 100%;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    margin-left: 12%;
+    margin-right: 13%;
+}
+
+    .destaque {
+      color: rgb(255, 196, 0);
+      font-weight: 600;
+    }
+
+    .h2-paixoes {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: whitesmoke;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid #ffd54f;
+      padding-left: 0.75rem;
+    }
+
+    .bloco {
+      background-color: #1a1a1a;
+    border-radius: 8px;
+    max-width: 950px;
+    margin-left: 20%;
+    margin-top: 3rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      
+      color: #ddd;
+    }
+
+    .titulo2 {
+      color: #ffc107;
+      margin-bottom: 1.5rem;
+    }
